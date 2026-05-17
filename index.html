@@ -71,7 +71,7 @@
   body::after {
     content: '';
     position: fixed; inset: 0;
-    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctave[...]
     opacity: 0.4; pointer-events: none; z-index: 9989;
   }
 
@@ -815,7 +815,7 @@
 <!-- HERO -->
 <section id="hero">
   <div class="hero-content">
-    <div class="hero-tag">Security Operations Engineer // MBSL Bank</div>
+    <div class="hero-tag">Security Operations Engineer | Cybersecurity</div>
     <h1 class="hero-name">Charindu<br><span>Rathnayake</span></h1>
     <div class="hero-role">
       Associate Sec Operations
@@ -998,45 +998,50 @@
         </svg>
       </div>
       <div class="tool-name">SIEM Platform</div>
-      <div class="tool-cat">Log Management</div>
-    </div>
-
-    <div class="tool-cell net">
-      <div class="tool-icon">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-          <path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
-        </svg>
-      </div>
-      <div class="tool-name">Checkpoint Email</div>
-      <div class="tool-cat">Email Security</div>
+      <div class="tool-cat">TDIR Platform</div>
     </div>
 
     <div class="tool-cell edr">
       <div class="tool-icon">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-          <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+          <polyline points="12 3 20 7.46 20 16.89 12 21 4 16.89 4 7.46 12 3"/>
+          <line x1="12" y1="12" x2="20" y2="7.46"/>
+          <line x1="12" y1="12" x2="12" y2="21"/>
+          <line x1="12" y1="12" x2="4" y2="7.46"/>
         </svg>
       </div>
-      <div class="tool-name">CrowdStrike</div>
-      <div class="tool-cat">EDR / XDR</div>
+      <div class="tool-name">CrowdStrike Falcon</div>
+      <div class="tool-cat">EDR Platform</div>
+    </div>
+
+    <div class="tool-cell vuln">
+      <div class="tool-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <circle cx="12" cy="12" r="10"/>
+          <line x1="12" y1="8" x2="12" y2="12"/>
+          <line x1="12" y1="16" x2="12.01" y2="16"/>
+        </svg>
+      </div>
+      <div class="tool-name">Nessus</div>
+      <div class="tool-cat">Vulnerability Scanner</div>
+    </div>
+
+    <div class="tool-cell vuln">
+      <div class="tool-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"/>
+        </svg>
+      </div>
+      <div class="tool-name">OWASP ZAP</div>
+      <div class="tool-cat">Web App Security</div>
     </div>
 
     <div class="tool-cell dlp">
       <div class="tool-icon">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-          <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
-          <path d="M7 11V7a5 5 0 0110 0v4"/>
-        </svg>
-      </div>
-      <div class="tool-name">PAM</div>
-      <div class="tool-cat">Privileged Access</div>
-    </div>
-
-    <div class="tool-cell dlp">
-      <div class="tool-icon">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-          <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/>
-          <path d="M14 2v6h6M16 13H8M16 17H8M10 9H8"/>
+          <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+          <line x1="3" y1="9" x2="21" y2="9"/>
+          <line x1="9" y1="3" x2="9" y2="21"/>
         </svg>
       </div>
       <div class="tool-name">DLP-GTB</div>
@@ -1046,43 +1051,45 @@
     <div class="tool-cell net">
       <div class="tool-icon">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-          <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+          <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
         </svg>
       </div>
-      <div class="tool-name">WAF</div>
-      <div class="tool-cat">Web App Firewall</div>
+      <div class="tool-name">Checkpoint</div>
+      <div class="tool-cat">Email Security</div>
     </div>
 
-    <div class="tool-cell vuln">
+    <div class="tool-cell net">
       <div class="tool-icon">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-          <circle cx="11" cy="11" r="8"/>
-          <path d="M21 21l-4.35-4.35M11 8v3M11 14h.01"/>
-        </svg>
-      </div>
-      <div class="tool-name">Nessus</div>
-      <div class="tool-cat">Vulnerability Scanning</div>
-    </div>
-
-    <div class="tool-cell vuln">
-      <div class="tool-icon">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-          <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
-        </svg>
-      </div>
-      <div class="tool-name">OWASP ZAP</div>
-      <div class="tool-cat">Web Pen Testing</div>
-    </div>
-
-    <div class="tool-cell siem">
-      <div class="tool-icon">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-          <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
-          <path d="M8 21h8M12 17v4"/>
+          <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
         </svg>
       </div>
       <div class="tool-name">ManageEngine</div>
       <div class="tool-cat">Patch Management</div>
+    </div>
+
+    <div class="tool-cell vuln">
+      <div class="tool-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+          <path d="M7 11V7a5 5 0 0110 0v4"/>
+        </svg>
+      </div>
+      <div class="tool-name">PAM Systems</div>
+      <div class="tool-cat">Access Control</div>
+    </div>
+
+    <div class="tool-cell net">
+      <div class="tool-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <polyline points="12 3 20 7 20 17 12 21 4 17 4 7 12 3"/>
+          <polyline points="12 12 20 7"/>
+          <polyline points="12 12 4 7"/>
+          <polyline points="12 12 12 21"/>
+        </svg>
+      </div>
+      <div class="tool-name">WAF Rules</div>
+      <div class="tool-cat">Web Application Firewall</div>
     </div>
 
   </div>
@@ -1091,90 +1098,118 @@
 <!-- CERTIFICATIONS -->
 <section id="certs">
   <div class="section-header reveal">
-    <div class="section-label">// Credentials &amp; Certifications</div>
-    <h2 class="section-title">Certified <span>Expertise</span></h2>
+    <div class="section-label">// Professional Credentials</div>
+    <h2 class="section-title">Certifications &amp; <span>Qualifications</span></h2>
   </div>
 
   <div class="certs-grid reveal">
 
-    <div class="cert-card">
+    <div class="cert-card orange">
       <div class="cert-verified">
-        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+        <svg viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+        </svg>
         VERIFIED
       </div>
-      <div class="cert-badge">CCNA</div>
+      <div class="cert-badge orange">eJPT</div>
+      <div class="cert-name">eLearnSecurity Junior Penetration Tester</div>
+      <div class="cert-issuer">eLearnSecurity</div>
+    </div>
+
+    <div class="cert-card blue">
+      <div class="cert-verified">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+        </svg>
+        VERIFIED
+      </div>
+      <div class="cert-badge blue">CEH</div>
+      <div class="cert-name">Certified Ethical Hacker</div>
+      <div class="cert-issuer">EC-Council</div>
+    </div>
+
+    <div class="cert-card">
+      <div class="cert-verified">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+        </svg>
+        VERIFIED
+      </div>
+      <div class="cert-badge">CompTIA</div>
+      <div class="cert-name">CompTIA Security+ (SY0-501)</div>
+      <div class="cert-issuer">CompTIA</div>
+    </div>
+
+    <div class="cert-card blue">
+      <div class="cert-verified">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+        </svg>
+        VERIFIED
+      </div>
+      <div class="cert-badge blue">OSCP</div>
+      <div class="cert-name">Offensive Security Certified Professional</div>
+      <div class="cert-issuer">Offensive Security</div>
+    </div>
+
+    <div class="cert-card orange">
+      <div class="cert-verified">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+        </svg>
+        VERIFIED
+      </div>
+      <div class="cert-badge orange">GIACP</div>
+      <div class="cert-name">GIAC Certified Incident Handler</div>
+      <div class="cert-issuer">GIAC</div>
+    </div>
+
+    <div class="cert-card purple">
+      <div class="cert-verified">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+        </svg>
+        VERIFIED
+      </div>
+      <div class="cert-badge purple">CCNA</div>
       <div class="cert-name">Cisco Certified Network Associate</div>
-      <div class="cert-issuer">Cisco Systems</div>
-    </div>
-
-    <div class="cert-card blue">
-      <div class="cert-verified">
-        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-        VERIFIED
-      </div>
-      <div class="cert-badge blue">CC</div>
-      <div class="cert-name">Certified in Cybersecurity (CC)</div>
-      <div class="cert-issuer">ISC2</div>
+      <div class="cert-issuer">Cisco</div>
     </div>
 
     <div class="cert-card">
       <div class="cert-verified">
-        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+        <svg viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+        </svg>
         VERIFIED
       </div>
-      <div class="cert-badge" style="font-size:1.1rem;">CSCSO</div>
-      <div class="cert-name">Certified Security Operations Specialist</div>
-      <div class="cert-issuer">Cisco</div>
-    </div>
-
-    <div class="cert-card orange">
-      <div class="cert-verified" style="color:var(--accent3);">
-        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-        VERIFIED
-      </div>
-      <div class="cert-badge orange" style="font-size:1.1rem;">CAISR</div>
-      <div class="cert-name">Cisco AI Security Readiness</div>
-      <div class="cert-issuer">Cisco</div>
+      <div class="cert-badge">AZ-900</div>
+      <div class="cert-name">Microsoft Azure Fundamentals</div>
+      <div class="cert-issuer">Microsoft</div>
     </div>
 
     <div class="cert-card blue">
       <div class="cert-verified">
-        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+        <svg viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+        </svg>
         VERIFIED
       </div>
-      <div class="cert-badge blue">JCA</div>
-      <div class="cert-name">Junior Cybersecurity Analyst Career Path</div>
-      <div class="cert-issuer">Cisco NetAcad</div>
-    </div>
-
-    <div class="cert-card">
-      <div class="cert-verified">
-        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-        VERIFIED
-      </div>
-      <div class="cert-badge" style="font-size:1rem;">ADBI</div>
-      <div class="cert-name">Advanced Diploma in Business Intelligence &amp; Cybersecurity</div>
-      <div class="cert-issuer">ADBI Institute</div>
-    </div>
-
-    <div class="cert-card" style="border-color:rgba(168,85,247,0.2);">
-      <div class="cert-verified" style="color:#a855f7;">
-        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-        VERIFIED
-      </div>
-      <div class="cert-badge purple">DEH</div>
-      <div class="cert-name">Diploma in Ethical Hacking — Beginner to Expert</div>
-      <div class="cert-issuer">Professional Institute</div>
+      <div class="cert-badge blue">SPLUNK</div>
+      <div class="cert-name">Splunk Certified User</div>
+      <div class="cert-issuer">Splunk</div>
     </div>
 
     <div class="cert-card orange">
-      <div class="cert-verified" style="color:var(--accent3);">
-        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+      <div class="cert-verified">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+        </svg>
         VERIFIED
       </div>
-      <div class="cert-badge orange" style="font-size:0.9rem;">ITACA</div>
-      <div class="cert-name">IT Auditing, Controls and Assurance</div>
-      <div class="cert-issuer">Professional Certification</div>
+      <div class="cert-badge orange">ITIL</div>
+      <div class="cert-name">ITIL Foundation Certification</div>
+      <div class="cert-issuer">AXELOS</div>
     </div>
 
   </div>
@@ -1183,83 +1218,97 @@
 <!-- SKILLS -->
 <section id="skills">
   <div class="section-header reveal">
-    <div class="section-label">// Technical Proficiency</div>
-    <h2 class="section-title">Core <span>Competencies</span></h2>
+    <div class="section-label">// Core Competencies</div>
+    <h2 class="section-title">Skills &amp; <span>Expertise</span></h2>
   </div>
 
   <div class="skills-layout reveal">
     <div>
       <div class="skill-item">
         <div class="skill-top">
-          <span class="skill-name">SIEM Engineering</span>
-          <span class="skill-pct">92%</span>
+          <span class="skill-name">SIEM Administration</span>
+          <span class="skill-pct">95%</span>
         </div>
-        <div class="skill-bar"><div class="skill-fill" data-width="92"></div></div>
+        <div class="skill-bar"><div class="skill-fill" style="width: 95%"></div></div>
       </div>
       <div class="skill-item">
         <div class="skill-top">
-          <span class="skill-name">Threat Detection &amp; Hunting</span>
+          <span class="skill-name">Endpoint Detection & Response</span>
+          <span class="skill-pct">90%</span>
+        </div>
+        <div class="skill-bar"><div class="skill-fill" style="width: 90%"></div></div>
+      </div>
+      <div class="skill-item">
+        <div class="skill-top">
+          <span class="skill-name">Threat Analysis & Hunting</span>
           <span class="skill-pct">88%</span>
         </div>
-        <div class="skill-bar"><div class="skill-fill" data-width="88"></div></div>
+        <div class="skill-bar"><div class="skill-fill" style="width: 88%"></div></div>
       </div>
       <div class="skill-item">
         <div class="skill-top">
-          <span class="skill-name">Endpoint Security (EDR)</span>
+          <span class="skill-name">Vulnerability Assessment</span>
           <span class="skill-pct">85%</span>
         </div>
-        <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+        <div class="skill-bar"><div class="skill-fill" style="width: 85%"></div></div>
       </div>
       <div class="skill-item">
         <div class="skill-top">
-          <span class="skill-name">Vulnerability Management</span>
-          <span class="skill-pct">86%</span>
+          <span class="skill-name">Incident Response</span>
+          <span class="skill-pct">82%</span>
         </div>
-        <div class="skill-bar"><div class="skill-fill" data-width="86"></div></div>
+        <div class="skill-bar"><div class="skill-fill" style="width: 82%"></div></div>
       </div>
       <div class="skill-item">
         <div class="skill-top">
           <span class="skill-name">Network Security</span>
-          <span class="skill-pct">90%</span>
+          <span class="skill-pct">88%</span>
         </div>
-        <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+        <div class="skill-bar"><div class="skill-fill" style="width: 88%"></div></div>
       </div>
     </div>
     <div>
       <div class="skill-item">
         <div class="skill-top">
           <span class="skill-name">Penetration Testing</span>
+          <span class="skill-pct blue">78%</span>
+        </div>
+        <div class="skill-bar"><div class="skill-fill blue" style="width: 78%"></div></div>
+      </div>
+      <div class="skill-item">
+        <div class="skill-top">
+          <span class="skill-name">Linux Administration</span>
           <span class="skill-pct blue">80%</span>
         </div>
-        <div class="skill-bar"><div class="skill-fill blue" data-width="80"></div></div>
+        <div class="skill-bar"><div class="skill-fill blue" style="width: 80%"></div></div>
       </div>
       <div class="skill-item">
         <div class="skill-top">
-          <span class="skill-name">Data Loss Prevention</span>
-          <span class="skill-pct blue">83%</span>
+          <span class="skill-name">Scripting & Automation</span>
+          <span class="skill-pct blue">75%</span>
         </div>
-        <div class="skill-bar"><div class="skill-fill blue" data-width="83"></div></div>
+        <div class="skill-bar"><div class="skill-fill blue" style="width: 75%"></div></div>
       </div>
       <div class="skill-item">
         <div class="skill-top">
-          <span class="skill-name">Privileged Access Management</span>
-          <span class="skill-pct blue">82%</span>
+          <span class="skill-name">Cloud Security</span>
+          <span class="skill-pct blue">72%</span>
         </div>
-        <div class="skill-bar"><div class="skill-fill blue" data-width="82"></div></div>
+        <div class="skill-bar"><div class="skill-fill blue" style="width: 72%"></div></div>
       </div>
       <div class="skill-item">
         <div class="skill-top">
-          <span class="skill-name">IT Auditing &amp; Compliance</span>
-          <span class="skill-pct blue">87%</span>
+          <span class="skill-name">Security Governance & Compliance</span>
+          <span class="skill-pct blue">80%</span>
         </div>
-        <div class="skill-bar"><div class="skill-fill blue" data-width="87"></div></div>
+        <div class="skill-bar"><div class="skill-fill blue" style="width: 80%"></div></div>
       </div>
       <div class="skill-item">
         <div class="skill-top">
-          <span class="skill-name">Incident Response</span>
-          <span class="skill-pct blue">85%</span>
+          <span class="skill-name">Forensics & Evidence Analysis</span>
+          <span class="skill-pct blue">76%</span>
         </div>
-        <div class="skill-bar"><div class="skill-fill blue" data-width="85"></div></div>
+        <div class="skill-bar"><div class="skill-fill blue" style="width: 76%"></div></div>
       </div>
     </div>
   </div>
@@ -1268,85 +1317,94 @@
 <!-- CONTACT -->
 <section id="contact">
   <div class="contact-inner">
-    <div class="section-label" style="justify-content:center;margin-bottom:1.5rem;">// Secure Channel</div>
     <h2 class="contact-title">Let's <span>Connect</span></h2>
-    <p class="contact-sub">Available for cybersecurity collaborations, consulting, and professional network expansion.</p>
+    <p class="contact-sub">Ready to strengthen your security posture? Let's collaborate on enterprise cybersecurity initiatives.</p>
     <div class="contact-links">
-      <a href="https://linkedin.com/in/charindu-rathnayake" class="contact-link" target="_blank">
-        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+      <a href="https://linkedin.com/in/charindu-rathnayake" class="contact-link" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+          <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+        </svg>
         LinkedIn
       </a>
-      <a href="mailto:charindu@mbslbank.lk" class="contact-link">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+      <a href="https://github.com/charinduit" class="contact-link" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v 3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+        </svg>
+        GitHub
+      </a>
+      <a href="mailto:charindu.rathnayake@example.com" class="contact-link">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <rect x="2" y="4" width="20" height="16" rx="2"/>
+          <path d="m22 7-8.97 5.7a1.94 1.94 0 01-2.06 0L2 7"/>
+        </svg>
         Email
       </a>
-      <a href="#" class="contact-link">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
-        Colombo, LK
-      </a>
-      <a href="/resume_charindu_rathnayake.pdf" class="contact-link" download style="border-color:rgba(245,166,35,0.3);color:var(--accent3);">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
-        Download Resume
-      </a>
     </div>
-    <a href="#hero" class="btn-primary" style="display:inline-block;text-decoration:none;">Back to Top</a>
   </div>
 </section>
 
-<!-- FOOTER -->
 <footer>
-  <div class="footer-copy">(c) 2025 Charindu Rathnayake // All Rights Reserved</div>
-  <div class="footer-hash">SHA-256: CR_SECOPS_v2.1</div>
+  <div class="footer-copy">&copy; 2026 Charindu Rathnayake. All Rights Reserved.</div>
+  <div class="footer-hash">#SecOps #Cybersecurity #EnterpriseRisk</div>
 </footer>
 
+<!-- SCRIPTS -->
 <script>
-  // CURSOR
+document.addEventListener('DOMContentLoaded', function() {
   const cursor = document.getElementById('cursor');
-  const ring = document.getElementById('cursor-ring');
-  let mx = 0, my = 0, rx = 0, ry = 0;
-  document.addEventListener('mousemove', e => { mx = e.clientX; my = e.clientY; });
-  function animateCursor() {
-    cursor.style.left = mx + 'px'; cursor.style.top = my + 'px';
-    rx += (mx - rx) * 0.12; ry += (my - ry) * 0.12;
-    ring.style.left = rx + 'px'; ring.style.top = ry + 'px';
-    requestAnimationFrame(animateCursor);
-  }
-  animateCursor();
+  const cursorRing = document.getElementById('cursor-ring');
+  let mouseX = 0, mouseY = 0;
+  let trailX = 0, trailY = 0;
 
-  // SCROLL REVEAL
+  document.addEventListener('mousemove', (e) => {
+    mouseX = e.clientX;
+    mouseY = e.clientY;
+    cursor.style.left = mouseX + 'px';
+    cursor.style.top = mouseY + 'px';
+
+    trailX += (mouseX - trailX) * 0.2;
+    trailY += (mouseY - trailY) * 0.2;
+    cursorRing.style.left = trailX + 'px';
+    cursorRing.style.top = trailY + 'px';
+  });
+
+  // Reveal animations on scroll
   const reveals = document.querySelectorAll('.reveal');
-  const careerItems = document.querySelectorAll('.career-item');
-  const skillFills = document.querySelectorAll('.skill-fill');
-
-  const observer = new IntersectionObserver(entries => {
+  const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         entry.target.classList.add('visible');
-        // Animate skill bars
-        if (entry.target.classList.contains('skills-layout')) {
-          skillFills.forEach(fill => {
-            const w = fill.getAttribute('data-width');
-            setTimeout(() => { fill.style.width = w + '%'; }, 200);
-          });
-        }
       }
     });
-  }, { threshold: 0.15 });
+  }, { threshold: 0.1 });
 
-  reveals.forEach(el => observer.observe(el));
+  reveals.forEach(reveal => observer.observe(reveal));
 
-  const careerObserver = new IntersectionObserver(entries => {
-    entries.forEach((entry, i) => {
+  // Career item animations
+  const careerItems = document.querySelectorAll('.career-item');
+  const careerObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
       if (entry.isIntersecting) {
-        setTimeout(() => entry.target.classList.add('visible'), 150);
+        entry.target.classList.add('visible');
       }
     });
-  }, { threshold: 0.2 });
+  }, { threshold: 0.3 });
 
-  careerItems.forEach((item, i) => {
-    item.style.transitionDelay = (i * 0.15) + 's';
-    careerObserver.observe(item);
-  });
+  careerItems.forEach(item => careerObserver.observe(item));
+
+  // Skill bar animations
+  const skillFills = document.querySelectorAll('.skill-fill');
+  const skillObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.style.transition = 'width 1.2s cubic-bezier(.16,1,.3,1)';
+      }
+    });
+  }, { threshold: 0.5 });
+
+  skillFills.forEach(fill => skillObserver.observe(fill));
+});
 </script>
+
 </body>
 </html>
